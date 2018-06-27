@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Alexandre Soares">
+		<meta name="description" content="Animação com o Canvas do HTML5">
+		<meta name="keywords" content="html5,javascript,canvas">
+		<title>CANVAS</title>
+		<!-- SCRIPTs -->
+		<script type="text/javascript">
+			// Javascript
+			function draw()
+			{
+				var elemcanvas = document.getElementById('tutorial');
+
+				if (elemcanvas.getContext)
+				{
+					var ctx = elemcanvas.getContext('2d');
+					ctx.fillStyle = "#FF0000";
+					ctx.fillRect(0,0,150,75);
+				}
+				else
+				{
+					alert("Seu navegador não suporta muito bem o elemento CANVAS!");
+				}
+			}
+		</script>
+		<!-- STYLEs -->
+		<style type="text/css">
+			/* CSS */
+			canvas { border: 3px solid red; }
+		</style>
+	</head>
+	<body onload="draw();">
+		<!--
+		CANVAS
+
+		Referência (https://msdn.microsoft.com/pt-br/library/dn151487.aspx)
+
+		O canvas é “uma tela de bitmap dependente de resolução que pode ser usada para a 
+		renderização de elementos gráficos ou outras imagens visuais rapidamente”. 
+		Em termos leigos, o canvas é um elemento novo em HTML5, que permite que se desenhem 
+		elementos gráficos usando JavaScript. 
+
+		Mais referências
+		https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Basic_usage
+		http://cheatsheetworld.com/programming/html5-canvas-cheat-sheet/
+		http://basicuse.net/articles/pl/textile/html_css/html5_canvas_examples/example_4
+		-->
+		<canvas id="tutorial">
+			<!-- aviso (caso não seja suportado pelo navegador ou browser) -->
+			Seu browser não está preparado para o elemento CANVAS!
+		</canvas>
+	</body>
+</html>

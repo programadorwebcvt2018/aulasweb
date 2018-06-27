@@ -1,0 +1,19 @@
+#conteudo{
+    max-width: 1000px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+#topo{
+    text-align: center;
+}
+
+#menu{
+    background-color: black;
+    height: 40px;
+    line-height: 40px;
+}
+
+#menu a{
+    color: #fff;
+}

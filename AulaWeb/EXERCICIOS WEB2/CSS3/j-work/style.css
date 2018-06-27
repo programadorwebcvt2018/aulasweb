@@ -1,0 +1,76 @@
+body{
+    margin: 0;   
+    font-family: tahoma;
+}
+
+#conteudo{
+    width: 1000px; /*largura*/
+    height: auto; /*altura*/
+    margin: 0 auto; /*centraliza o total*/
+}
+
+#topo{
+    height: 75px;
+    margin: 30px 0;
+}
+
+#logo{
+    float: left;
+}
+
+#menu{
+    float: right;
+    margin-top: 30px;
+}
+
+#menu a{ /*formatando os links do id menu*/
+    color: #670001;
+    text-decoration: none; /*retira o sublinhado padrão dos links*/
+    margin-left: 50px;
+}
+
+#menu a:hover{
+    text-decoration: underline;
+}
+
+#banner{
+    height: 400px;
+}
+
+.coluna{
+    width: 220px;
+    float: left;
+    margin: 30px 0;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+.coluna h2{
+    color: #670001;
+    margin: 0;
+    font-size: 20px;
+}
+
+.coluna p{
+    color: #333;
+}
+
+.coluna a{
+    color: #670001;
+}
+
+#col4{
+    margin-right: 0;   
+}
+
+#rodape{
+    clear: both;
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+
+
+
